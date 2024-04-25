@@ -1,19 +1,24 @@
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./*.{html,js}"],
   theme: {
     extend: {
       fontSize:{
-        a:"0.75rem",
-        b:"0.875rem",
-        c:"1rem",
-        d:"1.25rem",
-        e:"1.5rem",
-        f:"1.75rem",
-        g:"2.25rem",
+        sm:"0.75rem",
+        base:"0.875rem",
+        md:"1rem",
+        lg:"1.25rem",
+        xl:"1.5rem",
+        "2xl":"1.75rem",
+        "3xl":"2.25rem"
+      },
+
+      backgroundImage: {
+        'team-bg-image': "url('/public/teams/team.png')",
+        
       }
     },
   },
   plugins: [],
 }
-
